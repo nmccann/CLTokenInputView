@@ -412,6 +412,9 @@ static CGFloat const FIELD_MARGIN_X = 4.0; // Note: Same as CLTokenView.PADDING_
 
 #pragma mark - Textfield text
 
+- (UITextField *)tokenTextField {
+    return self.textField;
+}
 
 - (NSString *)text
 {

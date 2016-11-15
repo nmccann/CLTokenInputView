@@ -96,6 +96,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (copy, nonatomic) CL_GENERIC_SET(NSString *) *tokenizationCharacters;
 @property (assign, nonatomic) IBInspectable BOOL drawBottomBorder;
 
+@property (readonly, nonatomic, nonnull) UITextField *tokenTextField;
+
 @property (readonly, nonatomic) CL_GENERIC_ARRAY(CLToken *) *allTokens;
 @property (readonly, nonatomic, getter = isEditing) BOOL editing;
 @property (readonly, nonatomic) CGFloat textFieldDisplayOffset;
