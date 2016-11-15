@@ -15,8 +15,9 @@ static CGFloat const HSPACE = 0.0;
 static CGFloat const TEXT_FIELD_HSPACE = 4.0; // Note: Same as CLTokenView.PADDING_X
 static CGFloat const VSPACE = 4.0;
 static CGFloat const MINIMUM_TEXTFIELD_WIDTH = 56.0;
-static CGFloat const PADDING_TOP = 10.0;
-static CGFloat const PADDING_BOTTOM = 10.0;
+static CGFloat const MINIMUM_TEXTFIELD_HEIGHT = 40.0;
+static CGFloat const PADDING_TOP = 8.0;
+static CGFloat const PADDING_BOTTOM = 7.0;
 static CGFloat const PADDING_LEFT = 8.0;
 static CGFloat const PADDING_RIGHT = 16.0;
 static CGFloat const STANDARD_ROW_HEIGHT = 25.0;
@@ -90,7 +91,7 @@ static CGFloat const FIELD_MARGIN_X = 4.0; // Note: Same as CLTokenView.PADDING_
 
 - (CGSize)intrinsicContentSize
 {
-    return CGSizeMake(UIViewNoIntrinsicMetric, MAX(45, self.intrinsicContentHeight));
+    return CGSizeMake(UIViewNoIntrinsicMetric, MAX(MINIMUM_TEXTFIELD_HEIGHT, self.intrinsicContentHeight));
 }
 
 
